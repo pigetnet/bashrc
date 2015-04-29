@@ -7,7 +7,6 @@ alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
 
-
 ################# THIS PART IS REQUIRED FOR PIGET DO NOT ERASE ###############
 echo "-------------------------"
 echo "piget framework activated"
@@ -29,6 +28,7 @@ PATH=/opt/piget/core/graphics:$PATH
 PATH=/opt/piget/core/install:$PATH
 PATH=/opt/piget/core/network:$PATH
 PATH=/opt/piget/core/info:$PATH
+PATH=/opt/piget/core/string:$PATH
 
 #Remove duplicate path
 if [ -n "$PATH" ]; then
@@ -44,6 +44,5 @@ if [ -n "$PATH" ]; then
   PATH=${PATH#:}
   unset old_PATH x
 fi
-
 ###################################################################################
 
