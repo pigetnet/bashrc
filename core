@@ -24,11 +24,11 @@ export BLUE="\\0034[0;34m"
 export GREEN="\\033[0;32m"
 
 #Piget core framework scripts
-PATH=/opt/piget/core/graphics:$PATH
-PATH=/opt/piget/core/install:$PATH
-PATH=/opt/piget/core/network:$PATH
-PATH=/opt/piget/core/info:$PATH
-PATH=/opt/piget/core/string:$PATH
+PATH=$PATH:/opt/piget/core/graphics
+PATH=$PATH:/opt/piget/core/install
+PATH=$PATH:/opt/piget/core/network
+PATH=$PATH:/opt/piget/core/info
+PATH=$PATH:/opt/piget/core/string
 
 #Remove duplicate path
 if [ -n "$PATH" ]; then
